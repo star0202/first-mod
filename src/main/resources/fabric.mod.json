@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "first",
+  "version": "${version}",
+
+  "name": "First",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Starcea"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/first/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.star0202.first.First"
+    ]
+  },
+  "mixins": [
+    "first.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
